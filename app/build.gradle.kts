@@ -5,8 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.finalproject"
-    compileSdk = 33
+    compileSdk = 34
 
+    //for viewBinding
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.finalproject"
         minSdk = 24
@@ -44,4 +48,16 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    //added dependencies
+    implementation ("androidx.fragment:fragment-ktx:1.5.5")
+    //for recyclerview
+    implementation ("androidx.recyclerview:recyclerview:1.3.0")
+    //set up navigation component
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.7.6")
+    //for retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    //for moshi + deleted previous dependency
+    implementation ("com.squareup.moshi:moshi-kotlin:1.11.0")
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
 }

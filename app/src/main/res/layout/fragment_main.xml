@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="15dp"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:id="@+id/addHabitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/mainText"/>
+
+    <TextView
+        android:id="@+id/habitNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textColor="@color/mainText"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addHabitTextView" />
+
+    <TextView
+        android:id="@+id/mainFragToCalendarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/mainText"/>
+
+    <ImageView
+        android:id="@+id/sunIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/improved_sun"
+        app:layout_constraintBottom_toBottomOf="@+id/habitNameTextView"
+        app:layout_constraintStart_toEndOf="@+id/habitNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/habitNameTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
