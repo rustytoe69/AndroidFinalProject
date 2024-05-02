@@ -5,4 +5,4 @@ import android.widget.CheckBox
 //recycler view p1 for HABIT DETAILS FRAG
 data class HabitDetails(
     val date: String,
-    val isChecked: Boolean)
+    var isDone: Boolean)

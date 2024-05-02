@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--    recycler view p2 for HABIT DETAILS FRAG-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/background"
-    android:padding="8dp">
+    android:padding="15dp">
 
     <TextView
         android:id="@+id/listItemLayoutDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/mainText"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/notesText"
+        app:layout_constraintEnd_toStartOf="@+id/dateCheckBox"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="date" />
 
@@ -20,20 +23,37 @@
         android:id="@+id/notesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textColor="@color/mainText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/listItemLayoutDateText"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateCheckBox"
+        app:layout_constraintTop_toTopOf="@+id/dateCheckBox"
         tools:text="notes" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
         android:background="@color/secondDarkestPink"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listItemLayoutDateText" />
+        app:layout_constraintTop_toBottomOf="@+id/dateCheckBox" />
+
+    <CheckBox
+        android:id="@+id/dateCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/mainText"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemLayoutDateText"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/listItemLayoutDateText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.500" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
