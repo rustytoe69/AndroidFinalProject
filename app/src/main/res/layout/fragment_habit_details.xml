@@ -26,7 +26,7 @@
         android:layout_height="60dp"
         android:src="@drawable/improved_back_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/backArrowView"
         app:layout_constraintTop_toBottomOf="@+id/habitNameTextView"
         tools:layout_editor_absoluteX="50dp" />

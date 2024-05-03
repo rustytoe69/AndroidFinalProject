@@ -52,7 +52,7 @@ dependencies {
     implementation ("androidx.fragment:fragment-ktx:1.5.5")
     //for recyclerview
     implementation ("androidx.recyclerview:recyclerview:1.3.0")
-    //set up navigation component
+    //set up nav graph
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.6")
     //for retrofit
