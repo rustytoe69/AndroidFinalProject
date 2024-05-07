@@ -4,6 +4,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject.databinding.HabitDetailsListItemLayoutBinding
 
+//recycler view for HABIT DETAILS FRAG
+
 class HabitDetailsAdapter(val habitDetailsList:List<HabitDetails>):
     RecyclerView.Adapter<HabitDetailsViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HabitDetailsViewHolder {
